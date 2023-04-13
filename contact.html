@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Contact</title>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Inici</a>
+        <a href="cv.html">Curriculum</a>
+        <a href="contact">Contacte</a>
+    </nav>
+    <section>
+        <h2>Contacte</h2>
+        <img src="assets/img/sakura.png" alt="branca cirerer en flor">
+    </section>
     <form>
         <label for="nom">Nom</label> 
         <input id="nom" type="text" name="nom">
@@ -14,14 +25,19 @@
         <input id="email" type="email" name="email">
         <textarea for="text" rows="10" cols="30">Escriu el teu missatge</textarea> 
         <input id="text" type="text" name="text">
-        <p>Acceptes la política de dades?</p>
-        <a>Política de dades</a>
         <input id="dadesSi" type="checkbox" name="politicaDades" value="si">
-        <label for="dadesSi">Si</label>
-        <input id="dadesNo" type="checkbox" name="politicaDades" value="no">
-        <label for="dadesNo">No</label>
+        <label for="dadesSi">
+            <p>He llegit i accepto la
+                <a href="">Política de dades</a>
+            </p>
+        </label>
         <input type="submit">
     </form>
     
 </body>
+<footer>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-instagram"></i>
+</footer>
 </html>
