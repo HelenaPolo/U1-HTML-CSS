@@ -208,3 +208,37 @@ ul{
 #aficions i{
     font-size: 1.5rem;
 }
+/*--------------- Media Queries ------------*/
+
+@media screen and (min-width: 600px){
+
+    /*-----Inici-----*/
+    #hola img{
+        display:none;
+    }
+    #aficions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*-----Curriculum-----*/
+    #estudis ul{
+        display: grid;
+        grid-template-areas:
+        'top .' 
+        'leftA right'
+        'leftB right';
+    }
+
+    #estudis .primer{
+        grid-area: primer;
+    }
+    #estudis .segon{
+        grid-area: segon;
+    }
+    #estudis .tercer{
+        grid-area: tercer;
+    }
+    #estudis .quart{
+        grid-area: quart;
+    }
+}
