@@ -10,9 +10,9 @@ a{
 h2{
     font-size: 4rem;
 }
-
-/*--------------- Pàgina Contacte ------------*/
-
+h3{
+    font-size: 2rem;
+}
 nav{
     display: flex;
     justify-content: end; 
@@ -24,7 +24,21 @@ nav a{
     color: white;
     font-size: small;
 }
-header section{
+footer{
+    display: flex;
+    justify-content: center; 
+    background-color: black;  
+}
+footer i{
+    margin: .3em;
+    padding: .3em;
+    color: white;
+    font-size: x-large;
+}
+
+/*--------------- Pàgina Contacte ------------*/
+
+header #contacte{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -60,14 +74,137 @@ input[type=submit], h3{
     display: flex;
     justify-content: center;
 }
-footer{
-    display: flex;
-    justify-content: center; 
-    background-color: black;  
+
+/*--------------- Pàgina Curriculum ------------*/
+#cv{
+    background-color: pink;
+
 }
-footer i{
-    margin: .3em;
-    padding: .3em;
+header #curriculum, table, h2, ul{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+#container{
+    display: block;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+th, td, li{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: .3rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none ;
+}
+.curs{
+    border: none;
+    margin: 1rem;
+}
+#laboral h3{
+    margin: 5rem;
+}
+#laboral p{
+    padding: 1.5rem;
+}
+
+/*--------------- Pàgina Inici ------------*/
+
+#inici{
+    background-color:gainsboro;
+    background-size: cover;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hola, #hola h3, #hola p{
+    margin: 1rem;
+    padding: 1rem;
+}
+#hola{
+    display: grid;
+    grid-template-areas:
+    'top .' 
+    'leftA right'
+    'leftB right';
+    margin-bottom: 4rem;
+}
+#hola h3{
+    grid-area: top;
+}
+#hola #text1{
+    grid-area: leftA;
+}
+#hola #text2{
+    grid-area: leftB;
+}
+#hola img{
+    grid-area: right;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    max-width: 25vw;
+    margin: auto;
+    padding-bottom: 1rem;
+    outline: auto;
+    text-align: center;
+}
+.card img{
+    padding: 0;
+    margin: 0;
+    width: 25vw;
+}
+.card p{
+    margin: 1rem;
+    text-align: left;
+}
+.grid{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+#exper{
+    background-color: black;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+#exper h3{
     color: white;
-    font-size: x-large;
+    padding: 3rem;
+}
+#exper #imatges{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+#imatges img{
+    width: 10vw;
+    margin: 0 auto;
+
+}
+#aficions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 4rem;
+}
+#aficions div{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color:lightgray;
+    border-radius: 5px;
+    align-items: center;
+}
+#aficions i{
+    font-size: 1.5rem;
 }

@@ -4,18 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>U1-HTML-CSS</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Inici</a>
-        <a href="cv.html">Curriculum</a>
-        <a href="contact">Contacte</a>
-    </nav>
-    <section>
-        <h2>La meva pàgina</h2>
-        <img src="assets/img/sakura.png" alt="branca cirerer en flor">
+    <header>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="cv.html">CV</a>
+            <a href="contact">Contacte</a>
+        </nav>
+        <section id="inici">
+            <h2>El meu portfoli</h2>
+        </section>
+    </header>
+    <section id="hola">
+        <h3>Hola!</h3>
+        <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non, corporis, architecto nobis neque veniam temporibus, nostrum consequatur sapiente nesciunt illo fuga laudantium nam iure! Perferendis, rem. Culpa, sint fugit tenetur molestiae beatae commodi iure, atque non optio consequatur enim quis saepe architecto a autem illo ducimus dolorum ratione voluptatibus.</p>
+        <p id="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eligendi quibusdam amet consequuntur culpa praesentium quas assumenda reiciendis, minima unde aspernatur inventore mollitia aliquid ipsum?</p>
+        <img src="https://picsum.photos/300" alt="imatge random">
     </section>
-    
+    <h3>Els meus projectes</h3>
+    <div class="grid">
+        <article class="card">
+            <img src="https://picsum.photos/200/100" alt="imatge random">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla ipsa veniam fuga commodi? Vero similique ipsam sed amet. Culpa, eos voluptatibus. Vitae, deserunt omnis?</p>
+            <button>Llegir més</button>
+        </article>
+        <article class="card">
+            <img src="https://picsum.photos/200/100" alt="imatge random">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla ipsa veniam fuga commodi? Vero similique ipsam sed amet. Culpa, eos voluptatibus. Vitae, deserunt omnis?</p>
+            <button>Llegir més</button>
+        </article>
+        <article class="card">
+            <img src="https://picsum.photos/200/100" alt="imatge random">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla ipsa veniam fuga commodi? Vero similique ipsam sed amet. Culpa, eos voluptatibus. Vitae, deserunt omnis?</p>
+            <p><button>Llegir més</button></p>
+        </article>
+    </div>
+    <article id="exper">
+        <h3>Experiència</h3>
+        <div id="imatges">
+            <img src="assets/img/grafic_html5.png" alt="icona html5">
+            <img src="assets/img/grafic_css3.png" alt="icona css">
+            <img src="assets/img/grafic_js.png" alt="icona js">
+        </div>
+    </article>
+    <h3>Les meves aficions</h3>
+    <aside id="aficions">
+        <div>
+            <p>Viatjar</p>
+            <i class="fa-solid fa-plane"></i>        </div>
+        <div>
+            <p>Llegir</p>
+            <i class="fa-solid fa-book-open"></i>        </div>
+        <div>
+            <p>Fotografia</p>
+            <i class="fa-solid fa-camera"></i>        </div>
+        <div>
+            <p>Pixelart i dibuixar amb CSS</p>
+            <i class="fa-solid fa-code"></i>        </div>
+        <div>
+            <p>Fer una cervesa en bona companyia</p>
+            <i class="fa-solid fa-beer-mug-empty"></i>        </div>
+        <div>
+            <p>Mirar series</p>
+            <i class="fa-solid fa-video"></i>        </div>
+    </aside>
+    <footer>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
 </body>
 </html>

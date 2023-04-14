@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Curriculum</title>
 </head>
-<body>
-    <h1>Currículum</h1>
+<body id="cv">
+    <header>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="cv.html">CV</a>
+            <a href="contact">Contacte</a>
+        </nav>
+        <section id="curriculum">
+            <h2>Currículum</h2>
+        </section>
+    </header>
+    <!--<h1>Currículum</h1>
     <h2>Nom: Helena Polo</h2>
     <h2>email: helenapolotorcal@gmail.com</h2>
     <nav>
         <a href="#idiomes">Idiomes</a>
         <a href="#estudis">Estudis</a>
         <a href="#laboral">Laboral</a>
-    </nav>
-
+    </nav>-->
+<div id="container">
     <div id="idiomes">
-        <h2>Idiomes</h2>
+        <h3>Idiomes</h3>
         <table>
             <tr>
                 <th>Idioma</th>
@@ -50,20 +62,28 @@
         </table>
     </div>
     <div id="estudis">
-        <h2>Estudis</h2>
+        <h3>Estudis</h3>
         <ul>
-            <li><strong>Grau en cinematografia</strong></li>
-            <li>Escola Superior de Cinema i Audiovisuals de Catalunya ESCAC</li>
-            <li><strong>Confecció i publicació de pàgines web CP</strong></li>
-            <li>SOC</li>
-            <li><strong>Programació per a videojocs amb Unity</strong></li>
-            <li>CIFO L'Hopsitalet</li>
-            <li><strong>Front End amb Angular</strong></li>
-            <li>It Academy Barcelona Activa</li>
+            <li class="curs">
+                <li><strong>Grau en cinematografia</strong></li>
+                <li>Escola Superior de Cinema i Audiovisuals de Catalunya ESCAC</li>
+            </li>
+            <li class="curs">
+                <li><strong>Confecció i publicació de pàgines web CP</strong></li>
+                <li>SOC</li>
+            </li>
+            <li class="curs">
+                <li><strong>Programació per a videojocs amb Unity</strong></li>
+                <li>CIFO L'Hopsitalet</li>
+            </li>
+            <li class="curs">
+                <li><strong>Front End amb Angular</strong></li>
+                <li>It Academy Barcelona Activa</li>
+            </li>
         </ul>
     </div>
     <div id="laboral">
-        <h2>Laboral</h2>
+        <h3>Laboral</h3>
         <p><strong>SECRETARIA DE DIRECCIÓN a ESCUELA DE BAILE STANDARD LATINO</strong>
             (Barcelona 2021 - 2022)<br>
             Realización de flyers y carteles promocionales.
@@ -79,6 +99,12 @@
             (Barcelona 2006 - 2010)<br>
             Soporte en la logística de eventos.
             Guía  a visitantes y explicación del contenido de las exposiciones.</p>
-    </div>    
+    </div> 
+</div>
+<footer>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-instagram"></i>
+</footer>
 </body>
 </html>
